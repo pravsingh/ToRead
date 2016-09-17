@@ -1,1 +1,38 @@
 https://github.com/phaistos-networks/TANK/wiki/The-power-of-the-Log-and-Streams
+
+
+This is a collection of some very interesting and useful links to write-ups that can help you understand the power of the Log abstraction, and how various organizations rely on them. Most of them originate from the wonderful folks at Confluent (most of them ex-LinkedIn engineers), who have popularized the Log (although, of course, it has been in-use for a long time now and is a core technology of most databases and other various systems).
+
+The linked pages/videos/presentations are not strictly about logs and streams, although they are core to the discussed topic. They are also about stream processing, lambda and kappa architecture, reactive programming, event-sourcing and CQRS, and other related topics.
+
+https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying : Start Here. Jay Krep's great and highly influential write-up on the Log semantics and its power
+http://www.confluent.io/blog/stream-data-platform-1/ and http://www.confluent.io/blog/stream-data-platform-2/
+https://engineering.linkedin.com/blog/2016/04/kafka-ecosystem-at-linkedin
+http://engineeringblog.yelp.com/2016/07/billions-of-messages-a-day-yelps-real-time-data-pipeline.html and http://engineeringblog.yelp.com/2016/08/streaming-mysql-tables-in-real-time-to-kafka.html
+https://www.oreilly.com/ideas/why-local-state-is-a-fundamental-primitive-in-stream-processing
+Kafka, Samza and the Unix Philosophy of Distributed Data [pdf]
+https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101
+https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-102
+Dataflow: A Unified Model for Batch and Streaming Data Processing [youtube]
+Immutability Changes Everything [pdf]
+https://www.oreilly.com/ideas/questioning-the-lambda-architecture
+https://blog.twitter.com/2015/handling-five-billion-sessions-a-day-in-real-time
+https://cloud.google.com/dataflow/
+http://www.confluent.io/product/kafka-streams
+https://aws.amazon.com/kinesis/streams/
+https://cloud.google.com/dataflow/model/windowing
+https://azure.microsoft.com/en-us/services/event-hubs/ (See also https://blogs.msdn.microsoft.com/opensourcemsft/2015/08/08/choosing-between-azure-event-hub-and-kafka-what-you-need-to-know/ -- note that Azure Service Bus attempts to match RabbitMQ, whereas Azure Event Hubs is analogous to Kafka )
+https://github.com/GoogleCloudPlatform/DataflowJavaSDK
+http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/
+Designing Data-Intensive Applications : The book to read to understand those and other concepts
+http://githubengineering.com/gh-ost-github-s-online-migration-tool-for-mysql/ (if you want to build something like that yourself, and do not want to use or study any of the many libraries on GH, ready the Binary Log internals)
+Event Sourcing basics - EventStore is an open source, functional database, with Complex Event Processing in Javascript. It stores the data as a series of immutable events over time, making it easy to build event-sourced applications. Jet.com uses it along with Kafka. More about the Event Sourcing pattern here and here.
+https://github.com/OpenHFT/Chronicle-Queue
+http://www.confluent.io/blog/making-sense-of-stream-processing/
+https://en.wikipedia.org/wiki/Command–query_separation
+http://squirrel.pl/blog/2015/08/31/introduction-to-event-sourcing-and-command-query-responsibility-segregation/
+Introducing the Command Query Responsibility Segregation Pattern
+Command and Query Responsibility Segregation (CQRS) Pattern
+http://bravenewgeek.com/you-cannot-have-exactly-once-delivery/
+http://concord.io/
+Contact GitHub API Training Shop Blog About
